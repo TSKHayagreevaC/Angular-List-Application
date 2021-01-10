@@ -1,0 +1,12 @@
+<!-- <h1>List</h1> -->
+<app-add-list
+(addList) = "addList($event)"
+>
+</app-add-list>
+<app-list-item 
+*ngFor="let list of lists" 
+[list]="list"
+(deleteList)="deleteList($event)"
+>
+    <!-- <li>{{list.title}}</li> -->
+</app-list-item>
